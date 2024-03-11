@@ -165,6 +165,8 @@ services:
     expose:
       - "7897"
     environment:
+      - DEBUG=pep-proxy:*
+      - PEP_PROXY_DEBUG=true
       - PEP_PROXY_APP_HOST=iot-agent
       - PEP_PROXY_APP_PORT=${IOTA_SOUTH_PORT}
       - PEP_PROXY_PORT=7897
